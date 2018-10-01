@@ -1,4 +1,5 @@
 .b-hero
+	overflow: hidden
 	&__bg
 		background-image: url(../img/hero-bg.jpg)
 		background-repeat: no-repeat
@@ -6,22 +7,8 @@
 		background-size: cover
 		padding: 50px 0 30px
 	&__wrapper
-		margin-top: 50px
-		position: relative
-		opacity: .99
-		&::after
-			content: ''
-			position: absolute
-			z-index: -1
-			top: 190px
-			left: 50%
-			width: 1px
-			height: 1px
-			box-shadow: 0 0 180px 250px rgba(#a5f691, .7)
-			border-radius: 50%
-	&__inner
 		@extend %grid
-		position: relative
+		margin-top: 50px
 	&__left,
 	&__right
 		@extend %part
@@ -36,6 +23,17 @@
 	&__header
 		position: relative
 		z-index: 1
+		opacity: .99
+		&::after
+			content: ''
+			position: absolute
+			z-index: -1
+			top: 350px
+			left: 50%
+			width: 1px
+			height: 1px
+			box-shadow: 0 0 180px 250px rgba(#a5f691, .7)
+			border-radius: 50%
 	&__man
 		width: 665px
 		height: 640px
@@ -210,16 +208,20 @@
 		color: #fff
 		line-height: 1.2
 		margin: 0
+	&__border1,
+	&__border2,
+	&__border4,
+	&__border5,
+	&__border6
+		background-color: #fff
 	&__border1
 		width: 7px
 		height: 50px
-		background-color: #fff
 	&__border2,
 	&__border3
 		width: 45px
 		height: 7px
 		position: absolute
-		background-color: #fff
 		transform: rotate(8deg)
 	&__border2
 		top: 2px
@@ -233,20 +235,18 @@
 		bottom: -46px
 		width: 7px
 		height: 46px
-		background-color: #fff
 	&__border5
 		position: absolute
 		left: -7px
 		bottom: -27px
 		width: 105%
 		height: 7px
-		background-color: #fff
 		transform: rotate(-8deg)
 	&__field
 		padding: 12px 17px
 		border-radius: 3px
 		background-color: #fff
-		border: none
+		border: 1px solid transparent
 		appearance: none
 		width: 100%
 		font-size: 16px

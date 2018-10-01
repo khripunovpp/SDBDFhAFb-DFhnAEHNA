@@ -1,12 +1,141 @@
 @import "bourbon"
 
 
-/* Desktop-frist */
 @media only screen and (max-width : 991px)
-	/**/
+
+	.container
+		max-width: 320px
+
+	.b-hero
+		background-color: #fff
+		background-image: linear-gradient(to bottom, transparent 1000px, #d3d3d3)
+		&__bg
+			background-image: url(../img/hero-bg-mobile.jpg)
+			background-size: auto
+			padding: 0
+		&__header
+			padding: 25px 0 0
+			&::after
+				display: none
+		&__wrapper
+			display: block
+			margin: 0
+		&__left,
+		&__right
+			display: block
+		&__left
+			width: auto
+		&__right
+			padding: 0
+			margin-top: 25px
+		&__man
+			position: relative
+			bottom: 20px
+			left: -120px
+			margin-left: 0
+			width: 433px
+			height: 417px
+			background-image: url(../img/hero-man-mobile.png)
+		&__product
+			bottom: auto
+			top: 60px
+			right: -30px
+			margin-right: 0
+		&__cost
+			bottom: auto
+			top: 255px
+			right: 50px
+			margin-right: 0
+		&__footer
+			background-image: none
+			background-color: transparent
+			padding: 15px 0 40px
+		&__bacterium1,
+		&__bacterium2,
+		&__bacterium3,
+		&__bacterium4,
+		&__bacterium5,
+		&__bacterium6
+			z-index: 1
+		&__bacterium2,
+		&__bacterium6
+			display: none
+		&__bacterium1
+			left: 190px
+			bottom: auto
+			top: 150px
+		&__bacterium3
+			left: auto
+			right: 0
+			top: 110px
+		&__bacterium4
+			left: 0
+			top: 80px
+		&__bacterium5
+			left: 100px
+			top: 90px
+		&__stat
+			padding-right: 0
+			font-size: 30px
+			padding-top: 225px
+			line-height: 1.2
+			&::before
+				top: 0
+				margin-top: 0
+				right: -15px
+
+	.b-cost
+		padding: 22px 45px 22px 35px
+		&__oldprice
+			font-size: 15px
+		&__newprice
+			font-size: 30px
+
+	.b-header
+		&__inner
+			padding: 0
+		&__line1,
+		&__line2
+			display: none
+		&__level1
+			font-size: 15px
+			padding-right: 100px
+			margin: 0
+		&__level2
+			font-size: 13px
+			padding-right: 100px
+			margin: 0
+		&__level3
+			font-size: 30px
+			margin: 20px 0 0
+			line-height: 1.2
+		&__logo
+			width: 90px
+			top: -15px
+
+	.b-form
+		&__border1,
+		&__border2,
+		&__border3,
+		&__border4,
+		&__border5
+			background-color: #189800
+		&__inner
+			border-color: #189800
+		&__field
+			border-color: #189800
+			&:focus
+				border-color: transparent
+		&__caption
+			color: #189800
+
+	.b-effects
+		&__item
+			color: #000
+			&::before
+				color: #189800
+			b
+				color: #189800
 
 
-/* Mobile-first */
-@media only screen and (min-width : 992px)
-	/**/
 

@@ -38,7 +38,9 @@ html
 								.b-cost
 									span.b-cost__oldprice 1999
 									span.b-cost__newprice 999
-							img.b-hero__product(src="img/hero-product.png", alt="")
+							picture
+								source(srcset="img/hero-product-mobile.png", media="(max-width: 991px)")
+								img.b-hero__product(src="img/hero-product.png", alt="")
 							.b-hero__wrapper
 								.b-hero__left
 									.b-hero__form
@@ -68,12 +70,12 @@ html
 												p #[b Предотвращает] повторное появление запаха
 				.b-hero__footer
 					.container
-						.b-hero__bacterium1.js-parallax(data-speed="-8")
-						.b-hero__bacterium2.js-parallax(data-speed="-2")
-						.b-hero__bacterium3.js-parallax(data-speed="-5")
+						.b-hero__bacterium1.js-parallax(data-speed="-12")
+						.b-hero__bacterium2.js-parallax(data-speed="-6")
+						.b-hero__bacterium3.js-parallax(data-speed="-10")
 						.b-hero__bacterium4.js-parallax(data-speed="12")
-						.b-hero__bacterium5.js-parallax
-						.b-hero__bacterium6.js-parallax(data-speed="15")
+						.b-hero__bacterium5.js-parallax(data-speed="-13")
+						.b-hero__bacterium6.js-parallax(data-speed="20")
 						p.b-hero__stat мужчин Ливана страдают от грибковых заболеваний
 
 		script(src="js/common.js")

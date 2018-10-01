@@ -5,7 +5,7 @@
              var speed = $(this).data('speed') || 10,
                  shift = st / speed;
              $(this).css({
-                 "transform": "translate(0%, " + shift + "%"
+                 "transform": "translate(" + shift/3 + "%, " + shift + "%"
              })
          });
      });
