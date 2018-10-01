@@ -1,0 +1,79 @@
+doctype html
+html
+
+	head
+		meta(charset='utf-8')
+		title Антигрибковый спрей Fresh Fingers
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		link(rel='shortcut icon', href='img/favicon.ico', type='image/x-icon')
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,800,900")
+		link(rel='stylesheet', href='css/style.css')
+		style.
+			*,
+			*::after,
+			*::before {
+				//- outline: 1px solid rgba(255,0,0,.5) !important
+			}
+		script(src="http://ctr-localhost.ru/vlad/jq.js")
+
+	body
+		.w-page
+			.b-hero
+				.b-hero__bg
+					.b-hero__header
+						.b-header
+							.container
+								.b-header__inner
+									p.b-header__level1 Беспокоит запах ног?
+									p.b-header__level2 Попробуйте средство, которое решит проблему навсегда
+									.b-header__line1
+									p.b-header__level3 Антигрибковый спрей
+									img.b-header__logo(src="img/logo.png", alt="")
+									.b-header__line2
+					.b-hero__inner
+						.container
+							.b-hero__man
+							.b-hero__cost
+								.b-cost
+									span.b-cost__oldprice 1999
+									span.b-cost__newprice 999
+							img.b-hero__product(src="img/hero-product.png", alt="")
+							.b-hero__wrapper
+								.b-hero__left
+									.b-hero__form
+										.b-form
+											p.b-form__caption Оформление #[br] заказа
+											.b-form__border1
+											.b-form__border2
+											.b-form__border3
+											form.b-form__inner#order_form(action="", method="post")
+												select.b-form__field.b-form__field--select#country_code_selector
+													option(value="LB") Ливан
+												input(type="text", name="name", placeholder="Ваше имя").b-form__field
+												input(type="tel", name="phone", placeholder="Телефон").only_number.b-form__field
+												button.b-form__btn.b-btn Заказать сейчас
+											.b-form__border4
+											.b-form__border5
+								.b-hero__right
+									.b-hero__effects
+										ul.b-effects
+											li.b-effects__item
+												p #[b Устраняет] зуд и неприятный запах
+											li.b-effects__item
+												p #[b Борется] с грибком кожи и ногтей
+											li.b-effects__item
+												p #[b Устраняет] потливость ног
+											li.b-effects__item
+												p #[b Предотвращает] повторное появление запаха
+				.b-hero__footer
+					.container
+						.b-hero__bacterium1.js-parallax(data-speed="-8")
+						.b-hero__bacterium2.js-parallax(data-speed="-2")
+						.b-hero__bacterium3.js-parallax(data-speed="-5")
+						.b-hero__bacterium4.js-parallax(data-speed="12")
+						.b-hero__bacterium5.js-parallax
+						.b-hero__bacterium6.js-parallax(data-speed="15")
+						p.b-hero__stat мужчин Ливана страдают от грибковых заболеваний
+
+		script(src="js/common.js")

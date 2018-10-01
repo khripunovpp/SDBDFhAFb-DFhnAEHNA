@@ -1,0 +1,299 @@
+.b-hero
+	&__bg
+		background-image: url(../img/hero-bg.jpg)
+		background-repeat: no-repeat
+		background-position: 50% 0
+		background-size: cover
+		padding: 50px 0 30px
+	&__wrapper
+		margin-top: 50px
+		position: relative
+		opacity: .99
+		&::after
+			content: ''
+			position: absolute
+			z-index: -1
+			top: 190px
+			left: 50%
+			width: 1px
+			height: 1px
+			box-shadow: 0 0 180px 250px rgba(#a5f691, .7)
+			border-radius: 50%
+	&__inner
+		@extend %grid
+		position: relative
+	&__left,
+	&__right
+		@extend %part
+		position: relative
+		z-index: 1
+	&__left
+		width: 300px
+		overflow: hidden
+	&__right
+		padding-left: 390px
+		padding-bottom: 140px
+	&__header
+		position: relative
+		z-index: 1
+	&__man
+		width: 665px
+		height: 640px
+		position: absolute
+		z-index: 1
+		bottom: -190px
+		left: 50%
+		margin-left: -332px
+		background-image: url(../img/hero-man.png)
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		background-size: cover
+	&__product
+		position: absolute
+		z-index: 1
+		bottom: -230px
+		right: 50%
+		margin-right: -370px
+	&__cost
+		position: absolute
+		z-index: 1
+		bottom: -70px
+		right: 50%
+		margin-right: -250px
+	&__footer
+		padding: 265px 0 120px
+		background-color: #fff
+		background-image: linear-gradient(to bottom, transparent, #d3d3d3)
+	&__stat
+		margin: 0
+		font-size: 36px
+		font-weight: 900
+		text-transform: uppercase
+		text-align: right
+		padding-right: 420px
+		position: relative
+		&::before
+			content: ''
+			background-image: url(../img/hero-stat.png)
+			background-repeat: no-repeat
+			background-position: 50% 50%
+			background-size: cover
+			position: absolute
+			right: 60px
+			top: 50%
+			margin-top: -118px
+			width: 407px
+			height: 236px
+	&__bacterium1,
+	&__bacterium2,
+	&__bacterium3,
+	&__bacterium4,
+	&__bacterium5,
+	&__bacterium6
+		position: absolute
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		background-size: cover
+		transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1)
+	&__bacterium1
+		background-image: url(../img/bacterium1.png)
+		width: 31px
+		height: 30px
+		left: -55px
+		bottom: -25px
+	&__bacterium2
+		background-image: url(../img/bacterium2.png)
+		width: 29px
+		height: 28px
+		left: 25px
+		bottom: 5px
+	&__bacterium3
+		background-image: url(../img/bacterium3.png)
+		width: 41px
+		height: 40px
+		left: 200px
+		top: -55px
+	&__bacterium4
+		background-image: url(../img/bacterium4.png)
+		width: 68px
+		height: 65px
+		left: -60px
+		top: 8px
+	&__bacterium5
+		background-image: url(../img/bacterium5.png)
+		width: 62px
+		height: 62px
+		top: -70px
+		left: 40px
+	&__bacterium6
+		background-image: url(../img/bacterium6.png)
+		width: 97px
+		height: 95px
+		left: 120px
+		bottom: -80px
+
+.b-cost
+	padding: 35px 55px 55px 55px
+	background-image: url(../img/cost-bg.png)
+	background-repeat: no-repeat
+	background-size: 100% 100%
+	text-align: center
+	line-height: 1
+	&__oldprice
+		font-weight: 300
+		font-size: 24px
+		color: #4e4e4e
+		text-decoration: line-through
+		display: block
+	&__newprice
+		display: block
+		color: #fff
+		font-size: 48px
+		font-weight: 900
+
+.b-header
+	line-height: 1
+	text-align: right
+	direction: rtl
+	&__inner
+		padding-right: 275px
+		position: relative
+	&__level1
+		font-weight: 900
+		font-size: 24px
+		color: #9aff64
+		margin: 0 0 5px
+		text-transform: uppercase
+		/* удалить при вставке перевода */
+		direction: ltr
+	&__level2
+		color: #fff
+		font-size: 18px
+		margin: 0 0 8px
+	&__level3
+		font-weight: 900
+		font-size: 36px
+		color: #fedf48
+		margin: 15px 0 0
+		text-transform: uppercase
+	&__logo
+		position: absolute
+		right: 0
+		top: -37px
+	&__line1,
+	&__line2
+		width: 300%
+		height: 3px
+		background-color: #9aff66
+	&__line2
+		position: absolute
+		top: 0
+		left: 100%
+		margin-left: 45px
+
+.b-form
+	width: 100%
+	position: relative
+	margin: 2px 0 50px
+	&__inner
+		padding: 40px 30px 30px
+		border-left: 7px solid #fff
+		border-right: 7px solid #fff
+	&__caption
+		position: absolute
+		top: 10px
+		left: 0
+		width: 100%
+		text-align: center
+		font-size: 24px
+		text-transform: uppercase
+		color: #fff
+		line-height: 1.2
+		margin: 0
+	&__border1
+		width: 7px
+		height: 50px
+		background-color: #fff
+	&__border2,
+	&__border3
+		width: 45px
+		height: 7px
+		position: absolute
+		background-color: #fff
+		transform: rotate(8deg)
+	&__border2
+		top: 2px
+		left: -1px
+	&__border3
+		right: 0
+		top: 45px
+	&__border4
+		position: absolute
+		left: 0
+		bottom: -46px
+		width: 7px
+		height: 46px
+		background-color: #fff
+	&__border5
+		position: absolute
+		left: -7px
+		bottom: -27px
+		width: 105%
+		height: 7px
+		background-color: #fff
+		transform: rotate(-8deg)
+	&__field
+		padding: 12px 17px
+		border-radius: 3px
+		background-color: #fff
+		border: none
+		appearance: none
+		width: 100%
+		font-size: 16px
+		color: #000
+		transition: all .2s
+		&+&
+			margin-top: 15px
+		&:focus
+			box-shadow: 0 3px 7px rgba(0,0,0,.35)
+		&--select
+			background-image: url(../img/dropdown.png)
+			background-repeat: no-repeat
+			background-position: center right 17px
+	&__btn
+		margin-top: 30px
+		font-size: 18px
+		font-weight: 500
+
+::-webkit-input-placeholder
+  color: #000
+
+
+.b-effects
+	text-align: right
+	&__item
+		padding-right: 50px
+		color: #fff
+		text-transform: uppercase
+		line-height: 1.2
+		font-size: 14px
+		font-weight: 900
+		position: relative
+		&::before
+			content: '\e901'
+			@extend %icon
+			font-size: 27px
+			color: #9aff64
+			text-shadow: 0 3px 7px rgba(0,0,0,.35)
+			position: absolute
+			top: 6px
+			right: 0
+		&+&
+			margin-top: 30px
+		p
+			margin: 0
+		b
+			display: block
+			color: #9aff64
+			font-size: 18px
+			margin: 0 0 3px

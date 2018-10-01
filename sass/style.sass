@@ -1,0 +1,87 @@
+@import "bourbon"
+@import "icon.sass"
+@import "mixins"
+
+$color: #127603
+$font: 'Roboto', sans-serif
+
+html
+	box-sizing: border-box	
+	padding-bottom: 500px
+
+*,
+*::after,
+*::before
+	box-sizing: inherit
+	outline: none
+
+body
+	margin: 0	
+	overflow-x: hidden
+	font-family: $font
+	line-height: 1.4
+	font-size: 14px
+	background-color: $color
+
+img
+	max-width: 100%	
+	border: none	
+	outline: none	
+
+a
+	border: none	
+	outline: none	
+
+ul
+	list-style-type: none	
+	margin: 0	
+	padding: 0
+
+select::-ms-expand
+	display: none
+
+%container
+	width: 100%
+	max-width: 970px	
+	padding: 0 15px
+	margin: 0 auto
+
+%grid
+	display: table
+	width: 100%
+	table-layout: fixed
+
+%part
+	display: table-cell
+	vertical-align: top
+
+.container
+	@extend %container
+	position: relative
+
+.b-btn
+	display: table
+	margin: 0 auto
+	padding: 17px 25px
+	border-radius: 50px
+	border: none
+	font-size: 15px
+	font-weight: 800
+	text-transform: uppercase
+	color: #000
+	font-family: $font
+	background-color: #fdb041
+	background-image: linear-gradient(to bottom, #fee348, #fd7037)
+	box-shadow: 0 3px 21px rgba(0,0,0,.35)
+	cursor: pointer
+	transition: all .2s
+	&:hover
+		background-image: linear-gradient(to top, #fee348, #fd7037)
+
+
+@import "hero"
+
+
+
+//ALWAYS END
+@import "media"
