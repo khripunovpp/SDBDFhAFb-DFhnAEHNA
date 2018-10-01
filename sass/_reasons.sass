@@ -1,0 +1,112 @@
+.b-reasons
+	background-color: #000
+	background-image: url(../img/reasons-bg.jpg)
+	background-repeat: no-repeat
+	background-position: 50% 0
+	color: #fff
+	&__inner
+		padding: 45px 0
+	&__title
+		text-align: right
+		padding-right: 165px
+		margin: 0
+		b,
+		span
+			background-color: #ff0000
+			display: inline-block
+			padding: 0 10px
+		b
+			font-size: 30px
+			text-transform: uppercase
+		span
+			font-size: 24px
+			margin-top: 8px
+		i
+			font-style: normal
+	&__list
+		text-align: right
+		margin-top: 55px
+		padding: 0 125px 0 290px
+	&__item
+		@extend %grid
+		direction: rtl
+		&+&
+			margin-top: 30px
+	&__left,
+	&__right
+		@extend %part
+		vertical-align: middle
+	&__left
+		padding-right: 50px
+		/*удалить при вставке перевода*/
+		direction: rtl
+	&__right
+		width: 135px
+	&__text
+		font-size: 18px
+		font-weight: 800
+		margin: 0
+		/*удалить при вставке перевода*/
+		direction: ltr
+	&__img
+		width: 135px
+		height: 175px
+		border: 6px solid #fff
+		position: relative
+		&--1
+			&::after
+				content: ''
+				width: 135px
+				height: 208px
+				position: absolute
+				bottom: 0
+				left: 5px
+				background-image: url(../img/reasons-img-1.png)
+				background-repeat: no-repeat
+				background-position: 50% 50%
+				background-size: cover
+	&__bacterium1,
+	&__bacterium2,
+	&__bacterium3
+		position: absolute
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		background-size: cover
+		transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1)
+	&__bacterium1
+		top: -100px
+		left: 70px
+		background-image: url(../img/bacterium7.png)
+		width: 78px
+		height: 75px
+	&__bacterium2
+		top: -20px
+		left: -30px
+		background-image: url(../img/bacterium8.png)
+		width: 43px
+		height: 43px
+	&__bacterium3
+		top: 200px
+		left: -15px
+		background-image: url(../img/bacterium9.png)
+		width: 160px
+		height: 155px
+	&__line1,
+	&__line2
+		width: 0
+		height: 3px
+		background-color: #ff0000
+		margin: 5px 0 0
+		animation-delay: .5s
+		animation-duration: 1s
+		animation-fill-mode: both
+		&.js-isonscreen
+			animation-name: reasons-line
+	&__line1
+		margin-bottom: 15px
+
+@keyframes reasons-line
+	from
+		width: 0
+	to
+		width: 100%
