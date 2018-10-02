@@ -61,6 +61,8 @@ select::-ms-expand
 
 .b-btn
 	display: table
+	width: 100%
+	max-width: 400px
 	margin: 0 auto
 	padding: 17px 25px
 	border-radius: 50px
@@ -74,15 +76,20 @@ select::-ms-expand
 	background-image: linear-gradient(to bottom, #fee348, #fd7037)
 	box-shadow: 0 3px 21px rgba(0,0,0,.35)
 	cursor: pointer
-	transition: all .2s
 	&:hover
 		background-image: linear-gradient(to top, #fee348, #fd7037)
+	&.js-isonscreen
+		animation: bounce-top 0.9s ease 0s 1 normal both running
 
 
 @import "hero"
 @import "reasons"
+@import "try"
+@import "quiz"
+@import "composition"
 
 
 
 //ALWAYS END
+@import "animations"
 @import "media"

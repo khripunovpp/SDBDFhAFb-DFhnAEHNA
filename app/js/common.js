@@ -135,16 +135,43 @@ var _bxInnit = function(elem, opt) {
     return slider;
 }
 
+var toForm = function() {
+    $('.pre_toform').click(function(e) {
+        e.preventDefault();
+        var a = $('.js_submit');
+        var b = a.closest('form');
+
+        if ($('form#toform').length) {
+            a = $('#toform .js_submit');
+            b = a.closest('form#toform');
+        }
+
+        if (b.length && a.is(':visible')) {
+            $("html,body").animate({ scrollTop: b.last().offset().top }, 1000);
+        }
+        return false;
+    });
+}
+
 var parallax = function() {
     $(window).on('scroll', function() {
-        var st = $(this).scrollTop();
-        $('.js-parallax').each(function() {
-            var speed = $(this).data('speed') || 10,
-                shift = st / speed;
-            $(this).css({
-                "transform": "translate(0%, " + shift + "%"
-            })
-        });
+        var st = $(window).scrollTop();
+        $('.js-parallax-container').each(function() {
+            var containerOffset = $(this).offset(),
+                containerOffsetTop = containerOffset.top,
+                containerHeight = $(this).outerHeight();
+            scrollTop = (st - containerOffsetTop) + (containerHeight / 4); // ставим точку отсчета паралакса от середины контейнера
+            $('.js-parallax', this).each(function() {
+                var speed = 10,
+                    reverse = $(this).data('reverse'),
+                    shift = scrollTop / speed;
+                if ($(this).data('reverse') === true) shift = -shift;
+                $(this).css({
+                    "transform": "translate(0%, " + shift + "%"
+                })
+            });
+        })
+
     });
 }
 
@@ -158,6 +185,41 @@ var scrollDetection = function() {
             $(that).addClass('js-isonscreen');
         }
     });
+
+}
+
+var qiuz = function() {
+
+    $('.b-test__answer').on('click', function() {
+        $(this).addClass('selected').siblings().removeClass('selected')
+    });
+
+    $('.b-test__btn').on('click', function(event) {
+        event.preventDefault();
+        $('.b-test__loading').fadeIn(100, function() {
+            setTimeout(showPopup, 500)
+        });
+    });
+
+    $('.b-popup__close').on('click', closePoup);
+
+    function showPopup() {
+        $('body').css("overflow", "hidden")
+        $('.b-overlay').fadeIn(200, function() {
+            $('.b-test__loading').fadeOut(100)
+            $('.b-popup').fadeIn(500);
+        })
+
+    }
+
+    function closePoup() {
+        $('body').removeAttr('style')
+        $('.b-popup').fadeOut(100, function() {
+            $('.b-overlay').fadeOut(100);
+        })
+    }
+
+    $('.b-popup__btn').on('click', closePoup);
 
 }
 
@@ -189,5 +251,8 @@ $(function() {
         reasonsSlider.goToNextSlide()
     });
 
+    toForm()
+
+    qiuz()
 
 });

@@ -1,0 +1,91 @@
+.b-try
+	background-image: url(../img/try-bg.jpg)
+	background-repeat: no-repeat
+	background-position: 50% 50%
+	background-size: cover
+	color: #fff
+	padding: 60px 0 90px
+	&__wrapper
+		@extend %grid
+		direction: rtl
+		position: relative
+		z-index: 1
+	&__left,
+	&__right
+		@extend %part
+		vertical-align: middle
+	&__left
+		padding-right: 25px
+		text-align: right
+		/**/
+		direction: ltr
+	&__right
+		width: 365px
+	&__title
+		font-size: 48px
+		text-transform: uppercase
+		margin: 0 0 40px
+		line-height: 1.2
+	&__text
+		font-size: 18px
+		font-weight: 700
+		margin: 0
+	&__btn
+		display: inline-block
+		margin: 40px 0 0
+	&__product
+		background-image: url(../img/try-product-bg.png)
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		text-align: center
+	&__leaf1,
+	&__leaf2,
+	&__leaf3,
+	&__leaf4,
+	&__leaf5,
+	&__leaf6
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		background-size: cover
+		position: absolute
+	&__leaf3,
+	&__leaf4,
+	&__leaf5,
+	&__leaf6
+		z-index: 2
+	&__leaf1
+		background-image: url(../img/leaf1.png)
+		width: 62px
+		height: 79px
+		top: -20px
+		left: 60px
+	&__leaf2
+		background-image: url(../img/leaf2.png)
+		width: 133px
+		height: 162px
+		top: 100px
+		left: 280px
+	&__leaf3
+		background-image: url(../img/leaf3.png)
+		width: 161px
+		height: 72px
+		top: 90px
+		left: -60px
+	&__leaf4
+		background-image: url(../img/leaf4.png)
+		width: 104px
+		height: 85px
+		bottom: 20px
+		left: 50px
+	&__leaf5
+		background-image: url(../img/leaf5.png)
+		width: 127px
+		height: 114px
+		bottom: -40px
+		right: 220px
+	&__leaf6
+		background-image: url(../img/leaf6.png)
+		width: 198px
+		height: 241px
+		bottom: -220px
+		right: 0

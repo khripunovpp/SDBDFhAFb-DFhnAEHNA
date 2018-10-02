@@ -27,10 +27,10 @@ html
 								.b-header__inner
 									p.b-header__level1 Беспокоит запах ног?
 									p.b-header__level2 Попробуйте средство, которое решит проблему навсегда
-									.b-header__line1
+									.b-header__line1.js-scroll-detection
 									p.b-header__level3 Антигрибковый спрей
 									img.b-header__logo(src="img/logo.png", alt="")
-									.b-header__line2
+									.b-header__line2.js-scroll-detection
 					.b-hero__inner
 						.container
 							.b-hero__man
@@ -54,7 +54,7 @@ html
 													option(value="LB") Ливан
 												input(type="text", name="name", placeholder="Ваше имя").b-form__field
 												input(type="tel", name="phone", placeholder="Телефон").only_number.b-form__field
-												button.b-form__btn.b-btn Заказать сейчас
+												button.b-form__btn.b-btn.js-scroll-detection Заказать сейчас
 											.b-form__border4
 											.b-form__border5
 								.b-hero__right
@@ -68,16 +68,16 @@ html
 												p #[b Устраняет] потливость ног
 											li.b-effects__item
 												p #[b Предотвращает] повторное появление запаха
-				.b-hero__footer
+				.b-hero__footer.js-parallax-container
 					.container
-						.b-hero__bacterium1.js-parallax(data-speed="-12")
-						.b-hero__bacterium2.js-parallax(data-speed="-6")
-						.b-hero__bacterium3.js-parallax(data-speed="-10")
-						.b-hero__bacterium4.js-parallax(data-speed="12")
-						.b-hero__bacterium5.js-parallax(data-speed="-13")
-						.b-hero__bacterium6.js-parallax(data-speed="20")
+						.b-hero__bacterium1.js-parallax(data-reverse="true")
+						.b-hero__bacterium2.js-parallax(data-reverse="true")
+						.b-hero__bacterium3.js-parallax(data-reverse="true")
+						.b-hero__bacterium4.js-parallax
+						.b-hero__bacterium5.js-parallax
+						.b-hero__bacterium6.js-parallax
 						p.b-hero__stat мужчин Ливана страдают от грибковых заболеваний
-			.b-reasons
+			.b-reasons.js-parallax-container
 				.container
 					.b-reasons__inner
 						h2.b-reasons__title #[b #[i Неприятный] #[i запах мужчины]] #[span - основная причина непривлекательности мужчины]
@@ -94,11 +94,95 @@ html
 								li.b-reasons__item
 									.b-reasons__right
 										.b-reasons__img.b-reasons__img--2
-											.b-reasons__bacterium1.js-parallax(data-speed="10")
-											.b-reasons__bacterium2.js-parallax(data-speed="15")
-											.b-reasons__bacterium3.js-parallax(data-speed="-10")
+											.b-reasons__bacterium1.js-parallax
+											.b-reasons__bacterium2.js-parallax
+											.b-reasons__bacterium3.js-parallax(data-reverse="true")
 									.b-reasons__left
 										p.b-reasons__text Помимо этого, запах ног - это всегда следствие более серьезных и значительных заболеваний или паразитов, живущих в теле человека.
 										.b-reasons__line2.js-scroll-detection
+			.b-try.js-parallax-container
+				.container
+					.b-try__inner
+						.b-try__leaf1.js-parallax
+						.b-try__leaf2.js-parallax
+						.b-try__leaf3.js-parallax(data-reverse="true")
+						.b-try__leaf4.js-parallax(data-reverse="true")
+						.b-try__leaf5.js-parallax(data-reverse="true")
+						.b-try__leaf6.js-parallax(data-reverse="true")
+						.b-try__wrapper
+							.b-try__right
+								.b-try__product
+									img(src="img/try-product.png", alt="")
+							.b-try__left
+								h2.b-try__title Попробуйте,#[br] чтобы убедиться!
+								p.b-try__text #[b Fresh Fingers] - спрей для ног последнего поколения. Нанокомплекс в составе эффективно борется с грибком, устраняя его навсегда.
+								p.b-try__text Комплекс эфирных масел успокаивает потовые железы и снижает интенсивность их работы
+								button.b-try__btn.b-btn.js-scroll-detection.pre_toform Заказать Fresh Fingers по специальной цене для новых покупателей
+			.b-quiz.js-parallax-container
+				.container
+					.b-quiz__inner
+						.b-quiz__leaf1.js-parallax
+						.b-quiz__leaf2.js-parallax
+						.b-quiz__leaf3.js-parallax(data-reverse="true")
+						.b-quiz__man
+						.b-quiz__title
+							p.b-quiz__lead Неприятный запах ног снижает качество вашей жизни!
+						.b-quiz__test
+							.b-test
+								.b-test__wrapper
+									h2.b-test__title #[strong Пройдите тест] и узнайте, входите ли вы в группу риска?
+									.b-test__list
+										.b-test__row
+											.b-test__item
+												p.b-test__question Замечали ли вы запах от собственных ног?
+												.b-test__options
+													.b-test__switcher
+														span.b-test__answer.selected Да
+														span.b-test__answer Нет
+											.b-test__item.b-test__item--gradientToBottom
+												p.b-test__question Чувствуете ли вы зуд между пальцев ног или рук?
+												.b-test__options
+													.b-test__switcher
+														span.b-test__answer.selected Да
+														span.b-test__answer Нет
+											.b-test__item
+												p.b-test__question Принимаете ли вы душ каждый день?
+												.b-test__options
+													.b-test__switcher
+														span.b-test__answer.selected Да
+														span.b-test__answer Нет
+										.b-test__row
+											.b-test__item.b-test__item--gradientToTop
+												p.b-test__question Используете ли вы средства для гигиены тела?
+												.b-test__options
+													.b-test__switcher
+														span.b-test__answer.selected Да
+														span.b-test__answer Нет
+											.b-test__item
+												p.b-test__question Отказывали ли вам женщины?
+												.b-test__options
+													.b-test__switcher
+														span.b-test__answer.selected Да
+														span.b-test__answer Нет
+											.b-test__item.b-test__item--gradientToTop
+												p.b-test__question Сколько раз в неделю вы занимаетесь сексом?
+												.b-test__options
+													input.b-test__field
+									.b-test__loading
+									button.b-test__btn.b-btn Узнать результат!
+		//- .b-composition
+			.container
+				.b-composition__inner d
+		.b-overlay
+		.b-popup 
+			.b-popup__wrapper
+				button.b-popup__close
+				.b-popup__inner
+					img.b-popup__product(src="img/popup-product.png", alt="")
+					h3.b-popup__title К сожалению, у вас грибок ногтей
+					p.b-popup__text  Вы можете не замечать этого, так как запах маскируется средствами для ухода и одеждой. Простыми гигиеническими процедурами не обойтись. Если не предпринять необходимых действий, вы можете лишиться не только нескольких ногтей на ногах, но и пострадать от более серьезных заболеваний, таких как экзема и лишай.
+					p.b-popup__text #[b Используйте спрей Fresh Fingers - проверенное и сертифицированное средство, которое борется со всеми симптомами с первого применения.]
+					button.b-popup__btn.b-btn.pre_toform Купить сейчас
 		script(src="js/bxslider.js")
 		script(src="js/common.js")
+

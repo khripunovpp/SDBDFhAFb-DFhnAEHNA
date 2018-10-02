@@ -1,0 +1,55 @@
+.js-parallax
+	transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1)
+
+@keyframes bounce-top
+	0%
+		transform: translateY(-45px)
+		animation-timing-function: ease-in
+		opacity: 1
+	24%
+		opacity: 1
+	40%
+		transform: translateY(-24px)
+		animation-timing-function: ease-in
+	65%
+		transform: translateY(-12px)
+		animation-timing-function: ease-in
+	82%
+		transform: translateY(-6px)
+		animation-timing-function: ease-in
+	93%
+		transform: translateY(-4px)
+		animation-timing-function: ease-in
+	25%, 55%, 75%, 87%
+		transform: translateY(0)
+		animation-timing-function: ease-out
+	100%
+		transform: translateY(0)
+		animation-timing-function: ease-out
+		opacity: 1
+
+@keyframes reasons-line
+	from
+		width: 0
+	to
+		width: 100%
+
+@keyframes effects-item
+	from
+		transform: translateX(15px)
+		opacity: 0
+	to
+		transform: translateX(0)
+		opacity: 1
+
+@keyframes top-line-1
+	from
+		transform: translate(-200%)
+	to
+		transform: translate(0)
+
+@keyframes top-line-2
+	from
+		transform: translate(200%)
+	to
+		transform: translate(0)

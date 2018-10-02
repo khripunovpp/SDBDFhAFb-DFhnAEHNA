@@ -1,0 +1,242 @@
+.b-quiz
+	background-image: url(../img/quiz-bg.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: 50% 50%
+	text-align: right
+	padding: 45px 0 115px
+	&__test
+		width: 696px
+		display: inline-block
+		margin-top: 60px
+		position: relative
+		z-index: 1
+	&__title
+		display: inline-block
+		width: 700px
+		position: relative
+		z-index: 1
+		font-size: 36px
+		font-weight: 700
+		color: #fff
+		text-transform: uppercase
+		margin-right: 10px
+		p
+			display: inline
+			margin: 0
+			background-color: #ff0000
+			box-shadow: 10px 0 0 #ff0000, -10px 0 0 #ff0000
+	&__man
+		background-image: url(../img/quiz-man.png)
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		background-size: cover
+		position: absolute
+		bottom: -115px
+		left: -130px
+		width: 551px
+		height: 739px
+	&__leaf1,
+	&__leaf2,
+	&__leaf3
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		background-size: cover
+		position: absolute
+	&__leaf1
+		background-image: url(../img/leaf8.png)
+		width: 89px
+		height: 81px
+		top: 0
+		left: -140px
+	&__leaf2
+		background-image: url(../img/leaf9.png)
+		width: 155px
+		height: 153px
+		top: 25px
+		left: 200px
+	&__leaf3
+		background-image: url(../img/leaf10.png)
+		width: 232px
+		height: 145px
+		bottom: -160px
+		right: -50px
+
+.b-test
+	text-align: left
+	&__wrapper
+		background-color: #fff
+		border-right: 10px solid $color
+		position: relative
+		opacity: .99
+		&::after,
+		&::before
+			content: ''
+			position: absolute
+			z-index: -1
+			left: 0
+			width: 696px
+		&::after
+			background-image: url(../img/test-border-bottom.png)
+			height: 69px
+			bottom: -69px
+		&::before
+			background-image: url(../img/test-border-top.png)
+			height: 40px
+			top: -40px
+	&__title
+		font-size: 18px
+		color: #4a973b
+		padding-left: 30px
+		margin: 0 0 10px
+		strong
+			font-weight: 900
+			text-transform: uppercase
+			display: block
+	&__row
+		direction: rtl
+		@extend %grid
+	&__item
+		@extend %part
+		text-align: center
+		padding: 15px
+		&--gradientToBottom
+			background-image: linear-gradient(to bottom, transparent, #f1ebeb)
+		&--gradientToTop
+			background-image: linear-gradient(to top, transparent, #f1ebeb)
+	&__question
+		font-size: 14px
+		font-weight: 700
+		margin: 0 0 15px
+	&__answer
+		font-size: 16px
+		display: inline-block
+		margin: 0 20px
+		line-height: 40px
+		height: 40px
+		cursor: pointer
+		&::after
+			content: '\e901'
+			@extend %icon
+			display: inline-block
+			width: 23px
+			height: 23px
+			margin-right: 10px
+			border-radius: 3px
+			border: 1px solid #e8e8e8
+			line-height: 23px
+			font-size: 10px
+			background-color: #fff
+			color: #c9c9c9
+		&.selected
+			&::after
+				color: #2a851c
+	&__field
+		width: 60px
+		height: 40px
+		padding: 8px
+		border-radius: 3px
+		border: 1px solid #167017
+		box-shadow: inset 0 2px 7px rgba(0,0,0,.25)
+		font-size: 16px
+		text-align: center
+	&__btn
+		position: absolute
+		width: 300px
+		left: 50%
+		bottom: -65px
+		margin-left: -150px
+		font-size: 18px
+	&__loading
+		display: none
+		background-color: #fff
+		opacity: .5
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-image: url(../img/loading.gif)
+		background-repeat: no-repeat
+		background-position: 50% 50%
+
+.b-overlay
+	display: none
+	background-color: #000
+	opacity: .5
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 10
+
+.b-popup
+	position: fixed
+	display: none
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 11
+	overflow: auto
+	&__wrapper
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translate(-50%,0)
+		margin: 20px
+	&__inner
+		background-image: url(../img/popup-bg.png)
+		background-size: 100% 100%
+		text-align: right
+		padding: 75px 285px 75px 50px
+	&__product
+		position: absolute
+		top: 50%
+		right: -80px
+		transform: translateY(-50%)
+	&__title
+		font-size: 20px
+		text-transform: uppercase
+		color: #ff0000
+		margin: 0 0 35px
+		position: relative
+		padding-right: 90px
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			right: 0
+			width: 72px
+			height: 54px
+			margin-top: -27px
+			background-image: url(../img/popup-icon-attention.png)
+			background-size: cover
+			background-position: 50% 50%
+			background-repeat: no-repeat
+	&__text
+		font-size: 17px
+		margin: 0
+		&+&
+			margin-top: 20px
+	&__btn
+		max-width: 300px
+		display: inline-block
+		margin: 35px 0 0
+		font-size: 18px
+	&__close
+		cursor: pointer
+		position: absolute
+		top: 0
+		left: 0
+		height: 30px
+		line-height: 30px
+		background-color: transparent
+		border: none
+		padding: 0
+		&::before
+			content: '\e903'
+			@extend %icon
+			font-size: 30px
+			color: #fff

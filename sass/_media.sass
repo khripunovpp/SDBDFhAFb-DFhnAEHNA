@@ -3,6 +3,18 @@
 
 @media only screen and (max-width : 991px)
 
+	%grid-m
+		display: table
+		width: 100%
+		table-layout: fixed
+
+	%part-m
+		display: table-cell
+		vertical-align: top
+
+	.js-parallax
+		transform: none !important
+
 	.container
 		max-width: 320px
 
@@ -67,13 +79,13 @@
 		&__bacterium3
 			left: auto
 			right: 0
-			top: 110px
+			top: 70px
 		&__bacterium4
 			left: 0
-			top: 80px
+			top: 140px
 		&__bacterium5
 			left: 100px
-			top: 90px
+			top: 85px
 		&__stat
 			padding-right: 0
 			font-size: 30px
@@ -228,6 +240,147 @@
 					&.active
 							background-color: #ff0000
 
+	.b-try
+		background-image: url(../img/try-bg-mobile.jpg)
+		padding: 0 0 40px
+		&__wrapper
+			display: block
+		&__left,
+		&__right
+			display: block
+		&__left
+			position: relative
+			opacity: .99
+			padding-right: 0
+			&::after
+				content: ''
+				position: absolute
+				z-index: -1
+				top: 150px
+				left: 50%
+				width: 1px
+				height: 1px
+				box-shadow: 0 0 170px 170px rgba(#154f0d,.8)
+				border-radius: 50%
+		&__right
+			width: auto
+			mt-40
+		&__product
+			background-image: url(../img/try-product-bg-mobile.png)
+			img
+				max-height: 330px
+				margin-top: -50px
+		&__title
+			font-size: 26px
+			margin: 40px 0 25px
+			br
+				display: none
+		&__text
+			font-size: 16px
+			font-weight: 400
+		&__btn
+			display: table
+			margin: 80px auto 0
+			bo
+		&__leaf1
+			left: auto
+			right: 0
+			top: 20px
+			z-index: 2
+		&__leaf2
+			background-image: url(../img/leaf7.png)
+			width: 62px
+			height: 79px
+			top: auto
+			bottom: -75px
+			left: -30px
+		&__leaf3
+			top: 300px
+			left: -30px
+			z-index: 1
+		&__leaf4
+			left: auto
+			right: 0
+			z-index: 1
+			bottom: 40px
+		&__leaf5
+			bottom: auto
+			top: -50px
+			right: auto
+			left: 0
+		&__leaf6
+			display: none
+
+	.b-quiz
+		background-image: none
+		background-color: #fff
+		padding: 40px 0
+		&__man,
+		&__leaf1,
+		&__leaf2,
+		&__leaf3
+			display: none
+		&__title
+			width: auto
+			font-size: 24px
+		&__test
+			width: auto
+			margin-top: 20px
+
+
+	.b-test
+		text-align: unset
+		&__title
+			padding-left: 0
+		&__wrapper
+			border: none
+			background-color: transparent
+			&::after,
+			&::before
+				display: none
+		&__row
+			display: block
+			&+&
+				border-top: 1px dashed #d5d5d5
+		&__item
+			@extend %grid-m
+			background-image: none
+			direction: rtl
+			padding: 20px 0
+			&+&
+				border-top: 1px dashed #d5d5d5
+		&__question
+			@extend %part-m
+			vertical-align: middle
+			/**/
+			direction: ltr
+			text-align: right
+		&__options
+			@extend %part-m
+			vertical-align: middle
+		&__switcher
+			border: 1px solid #127603
+			border-radius: 3px
+			@extend %grid-m
+			width: 110px
+			margin: 0 auto
+		&__answer
+			margin: 0
+			height: 35px
+			line-height: 35px
+			font-size: 13px
+			@extend %part-m
+			&.selected
+				background-color: #127603
+				color: #fff
+			&::after
+				display: none
+		&__btn
+			position: relative
+			width: 100%
+			left: auto
+			bottom: auto
+			margin: 20px 0 0
 
 
 
