@@ -3,3 +3,69 @@
 	background-image: linear-gradient(to bottom, #fff, #c5f8a2)
 	position: relative
 	z-index: 1
+	padding: 60px 0
+	&__title
+		position: relative
+		z-index: 1
+		margin: 0
+		font-size: 36px
+		color: #2a8916
+		text-transform: uppercase
+		text-align: center
+	&__wrapper
+		@extend %grid
+		direction: rtl
+	&__left,
+	&__right
+		@extend %part
+		vertical-align: middle
+	&__right
+		position: relative
+	&__left
+		position: relative
+		z-index: 1
+	&__product
+		position: relative
+		z-index: 1
+		text-align: center
+		background-image: url(../img/composition-product-bg.png)
+		background-repeat: no-repeat
+		background-position: 50% 50%
+	&__waves
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-top: -190px
+		margin-left: -190px
+		width: 380px
+		height: 380px
+		background-color: #dcf6db
+		background-color: rgba(#00a45d,.1)
+		border-radius: 50%
+		border: 2px solid #fcfffa
+		animation: pulse 1.5s linear .6s infinite
+		opacity: 0
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			border-radius: 50%
+		&::before
+			width: 440px
+			height: 440px
+			margin-top: -220px
+			margin-left: -220px
+			border: 2px solid #f4feed
+			animation: pulse 1s linear .4s infinite
+			opacity: 0
+		&::after
+			width: 500px
+			height: 500px
+			margin-top: -250px
+			margin-left: -250px
+			border: 2px solid #f7fef1
+			animation: pulse 1.5s linear .8s infinite
+			opacity: 0
+
