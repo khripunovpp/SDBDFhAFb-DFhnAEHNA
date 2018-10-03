@@ -465,7 +465,7 @@ select::-ms-expand {
   -webkit-transition: all .2s;
   -o-transition: all .2s;
   transition: all .2s;
-  direction: rtl;
+  text-align: right;
 }
 
 .b-form__field + .b-form__field {
@@ -481,6 +481,7 @@ select::-ms-expand {
   background-image: url(../img/dropdown.png);
   background-repeat: no-repeat;
   background-position: center left 17px;
+  direction: rtl;
 }
 
 .b-form__btn {
@@ -2402,6 +2403,6 @@ select::-ms-expand {
     padding: 18px 40px 18px 15px;
     max-width: 200px;
     top: -10px;
-    left: -30px;
+    left: -15px;
   }
 }
