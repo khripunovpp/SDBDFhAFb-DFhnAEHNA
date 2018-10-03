@@ -49,12 +49,12 @@ html
 											.b-form__border1
 											.b-form__border2
 											.b-form__border3
-											form.b-form__inner#order_form(action="", method="post")
+											form.b-form__inner(action="", method="post")
 												select.b-form__field.b-form__field--select#country_code_selector
 													option(value="LB") Ливан
 												input(type="text", name="name", placeholder="Ваше имя").b-form__field
 												input(type="tel", name="phone", placeholder="Телефон").only_number.b-form__field
-												button.b-form__btn.b-btn.js-scroll-detection Заказать сейчас
+												button.b-form__btn.b-btn.js-scroll-detection.js_submit Заказать сейчас
 											.b-form__border4
 											.b-form__border5
 								.b-hero__right
@@ -176,7 +176,7 @@ html
 					h2.b-composition__title У нее больше не будет причин для отказа!
 					.b-composition__wrapper
 						.b-composition__right
-							.b-composition__waves
+							.b-composition__waves.js-scroll-detection
 							.b-composition__product
 								img(src="img/composition-product.png", alt="")
 						.b-composition__left
@@ -200,6 +200,37 @@ html
 			.b-clinically__inner
 				img.b-clinically__stamps(src="img/clinically-stamps.png", alt="")
 				p.b-clinically__text Спрей протестирован клинически, не имеет противопоказаний и ограничений
+		.b-order
+			.container
+				.b-order__inner
+					h2.b-order__title #[strong Fresh Fingers] Спрей, который изменит все
+					.b-order__wrapper
+						.b-order__right
+							p.b-order__bubble.js-scroll-detection Закажите сегодня и получите дополнительную скидку как новый покупатель!
+							.b-order__man
+							.b-order__glow
+							.b-order__cost
+								.b-cost
+									span.b-cost__oldprice 1999
+									span.b-cost__newprice 999
+							picture
+								source(srcset="img/hero-product-mobile.png", media="(max-width: 991px)")
+								img.b-order__product(src="img/hero-product.png", alt="")
+						.b-order__left
+							.b-order__form
+								.b-form
+									p.b-form__caption Оформление #[br] заказа
+									.b-form__border1
+									.b-form__border2
+									.b-form__border3
+									form.b-form__inner#order_form(action="", method="post")
+										select.b-form__field.b-form__field--select#country_code_selector
+											option(value="LB") Ливан
+										input(type="text", name="name", placeholder="Ваше имя").b-form__field
+										input(type="tel", name="phone", placeholder="Телефон").only_number.b-form__field
+										button.b-form__btn.b-btn.js-scroll-detection.js_submit Заказать сейчас
+									.b-form__border4
+									.b-form__border5
 		.b-overlay
 		.b-popup 
 			.b-popup__wrapper

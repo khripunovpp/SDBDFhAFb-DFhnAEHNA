@@ -1,0 +1,89 @@
+.b-order
+	padding: 165px 0 215px
+	background-image: url(../img/order-bg.jpg)
+	background-repeat: no-repeat
+	background-position: 50% 0
+	position: relative
+	overflow: hidden
+	&::after
+		content: ''
+		position: absolute
+		bottom: 80px
+		left: 0
+		height: 250px
+		width: 100%
+		background-color: #b0eb9e
+	&__title
+		width: 400px
+		color: #fff
+		font-weight: 400
+		font-size: 27px
+		line-height: 1
+		margin: 0
+		text-align: center
+		strong
+			text-transform: uppercase
+			display: block
+			font-size: 50px
+	&__wrapper
+		@extend %grid
+		direction: rtl
+		margin-top: 90px
+	&__left,
+	&__right
+		@extend %part
+		direction: ltr
+		position: relative
+		z-index: 1
+	&__left
+		padding-left: 30px
+		width: 330px
+	&__form
+		width: 300px
+		overflow: hidden
+	&__bubble
+		max-width: 365px
+		position: absolute
+		z-index: 1
+		top: -210px
+		left: 90px
+		background-image: url(../img/order-bubble-bg.png)
+		background-repeat: no-repeat
+		background-size: 100% 100%
+		padding: 50px 65px 50px 30px
+		margin: 0
+		font-size: 18px
+		line-height: 1.2
+		color: #108400
+		font-weight: 700
+		text-align: right
+		&.js-isonscreen
+			animation: slide-in-elliptic-right-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+	&__cost
+		position: absolute
+		bottom: 30px
+		left: 0
+	&__product
+		position: absolute
+		z-index: 1
+		bottom: -90px
+		left: 60px
+	&__man
+		background-image: url(../img/order-man.png)
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		background-size: cover
+		width: 569px
+		height: 729px
+		position: absolute
+		bottom: -100px
+		right: -180px
+	&__glow
+		position: absolute
+		z-index: -1
+		bottom: 340px
+		right: 140px
+		width: 1px
+		height: 1px
+		box-shadow: 0 0 220px 220px #a5f691
+		border-radius: 50%

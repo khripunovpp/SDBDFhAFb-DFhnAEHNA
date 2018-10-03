@@ -44,7 +44,6 @@
 		background-color: rgba(#00a45d,.1)
 		border-radius: 50%
 		border: 2px solid #fcfffa
-		animation: pulse 1.5s linear .6s infinite
 		opacity: 0
 		&::before,
 		&::after
@@ -59,7 +58,6 @@
 			margin-top: -220px
 			margin-left: -220px
 			border: 2px solid #f4feed
-			animation: pulse 1s linear .4s infinite
 			opacity: 0
 		&::after
 			width: 500px
@@ -67,8 +65,13 @@
 			margin-top: -250px
 			margin-left: -250px
 			border: 2px solid #f7fef1
-			animation: pulse 1.5s linear .8s infinite
 			opacity: 0
+		&.js-isonscreen
+			animation: pulse 1.5s linear .6s infinite
+			&::before
+				animation: pulse 1s linear .4s infinite
+			&::after
+				animation: pulse 1.5s linear .8s infinite
 	&__item
 		@extend %grid
 		&+&
@@ -106,7 +109,7 @@
 		font-weight: 700
 
 .b-clinically
-	margin: -95px auto 90px
+	margin: -95px auto -90px
 	width: 833px
 	background-image: url(../img/clinically-bg.png)
 	background-size: 100% 100%

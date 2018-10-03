@@ -51,13 +51,13 @@
                       <div class="b-form__border1"></div>
                       <div class="b-form__border2"></div>
                       <div class="b-form__border3"></div>
-                      <form class="b-form__inner" id="order_form" action="" method="post">
+                      <form class="b-form__inner" action="" method="post">
                         <select class="b-form__field b-form__field--select" id="country_code_selector">
                           <option value="LB">Ливан</option>
                         </select>
                         <input class="b-form__field" type="text" name="name" placeholder="Ваше имя">
                         <input class="only_number b-form__field" type="tel" name="phone" placeholder="Телефон">
-                        <button class="b-form__btn b-btn js-scroll-detection">Заказать сейчас</button>
+                        <button class="b-form__btn b-btn js-scroll-detection js_submit">Заказать сейчас</button>
                       </form>
                       <div class="b-form__border4"></div>
                       <div class="b-form__border5"></div>
@@ -227,7 +227,7 @@
           <h2 class="b-composition__title">У нее больше не будет причин для отказа!</h2>
           <div class="b-composition__wrapper">
             <div class="b-composition__right">
-              <div class="b-composition__waves"></div>
+              <div class="b-composition__waves js-scroll-detection"></div>
               <div class="b-composition__product"><img src="img/composition-product.png" alt=""></div>
             </div>
             <div class="b-composition__left">
@@ -259,6 +259,46 @@
     <div class="b-clinically">
       <div class="b-clinically__inner"><img class="b-clinically__stamps" src="img/clinically-stamps.png" alt="">
         <p class="b-clinically__text">Спрей протестирован клинически, не имеет противопоказаний и ограничений</p>
+      </div>
+    </div>
+    <div class="b-order">
+      <div class="container">
+        <div class="b-order__inner">
+          <h2 class="b-order__title"><strong>Fresh Fingers</strong> Спрей, который изменит все</h2>
+          <div class="b-order__wrapper">
+            <div class="b-order__right">
+              <p class="b-order__bubble js-scroll-detection">Закажите сегодня и получите дополнительную скидку как новый покупатель!</p>
+              <div class="b-order__man"></div>
+              <div class="b-order__glow"></div>
+              <div class="b-order__cost">
+                <div class="b-cost"><span class="b-cost__oldprice">1999</span><span class="b-cost__newprice">999</span></div>
+              </div>
+              <picture>
+                <source srcset="img/hero-product-mobile.png" media="(max-width: 991px)"><img class="b-order__product" src="img/hero-product.png" alt="">
+              </picture>
+            </div>
+            <div class="b-order__left">
+              <div class="b-order__form">
+                <div class="b-form">
+                  <p class="b-form__caption">Оформление <br> заказа</p>
+                  <div class="b-form__border1"></div>
+                  <div class="b-form__border2"></div>
+                  <div class="b-form__border3"></div>
+                  <form class="b-form__inner" id="order_form" action="" method="post">
+                    <select class="b-form__field b-form__field--select" id="country_code_selector">
+                      <option value="LB">Ливан</option>
+                    </select>
+                    <input class="b-form__field" type="text" name="name" placeholder="Ваше имя">
+                    <input class="only_number b-form__field" type="tel" name="phone" placeholder="Телефон">
+                    <button class="b-form__btn b-btn js-scroll-detection js_submit">Заказать сейчас</button>
+                  </form>
+                  <div class="b-form__border4"></div>
+                  <div class="b-form__border5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="b-overlay"></div>
