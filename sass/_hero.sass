@@ -161,8 +161,6 @@
 		color: #9aff64
 		margin: 0 0 5px
 		text-transform: uppercase
-		/* удалить при вставке перевода */
-		direction: ltr
 	&__level2
 		color: #fff
 		font-size: 18px
@@ -206,7 +204,7 @@
 		left: 0
 		width: 100%
 		text-align: center
-		font-size: 24px
+		font-size: 38px
 		text-transform: uppercase
 		color: #fff
 		line-height: 1.2
@@ -256,6 +254,7 @@
 		font-size: 16px
 		color: #000
 		transition: all .2s
+		direction: rtl
 		&+&
 			margin-top: 15px
 		&:focus
@@ -263,10 +262,10 @@
 		&--select
 			background-image: url(../img/dropdown.png)
 			background-repeat: no-repeat
-			background-position: center right 17px
+			background-position: center left 17px
 	&__btn
 		margin-top: 30px
-		font-size: 18px
+		font-size: 23px
 		font-weight: 500
 
 ::-webkit-input-placeholder
@@ -280,7 +279,7 @@
 		color: #fff
 		text-transform: uppercase
 		line-height: 1.2
-		font-size: 14px
+		font-size: 20px
 		font-weight: 900
 		position: relative
 		transform: translateX(15px)
@@ -297,7 +296,7 @@
 			top: 6px
 			right: 0
 		&+&
-			margin-top: 30px
+			margin-top: 20px
 		&:nth-child(2)
 			animation-delay: .5s
 		&:nth-child(3)
@@ -309,7 +308,7 @@
 		b
 			display: block
 			color: #9aff64
-			font-size: 18px
+			font-size: 22px
 			margin: 0 0 3px
 		&.js-isonscreen
 			animation-name: effects-item

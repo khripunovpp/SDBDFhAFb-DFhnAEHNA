@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?cwhh4a");
@@ -335,8 +334,6 @@ select::-ms-expand {
   color: #9aff64;
   margin: 0 0 5px;
   text-transform: uppercase;
-  /* удалить при вставке перевода */
-  direction: ltr;
 }
 
 .b-header__level2 {
@@ -399,7 +396,7 @@ select::-ms-expand {
   left: 0;
   width: 100%;
   text-align: center;
-  font-size: 24px;
+  font-size: 38px;
   text-transform: uppercase;
   color: #fff;
   line-height: 1.2;
@@ -468,6 +465,7 @@ select::-ms-expand {
   -webkit-transition: all .2s;
   -o-transition: all .2s;
   transition: all .2s;
+  direction: rtl;
 }
 
 .b-form__field + .b-form__field {
@@ -482,12 +480,12 @@ select::-ms-expand {
 .b-form__field--select {
   background-image: url(../img/dropdown.png);
   background-repeat: no-repeat;
-  background-position: center right 17px;
+  background-position: center left 17px;
 }
 
 .b-form__btn {
   margin-top: 30px;
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 500;
 }
 
@@ -504,7 +502,7 @@ select::-ms-expand {
   color: #fff;
   text-transform: uppercase;
   line-height: 1.2;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 900;
   position: relative;
   -webkit-transform: translateX(15px);
@@ -528,7 +526,7 @@ select::-ms-expand {
 }
 
 .b-effects__item + .b-effects__item {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .b-effects__item:nth-child(2) {
@@ -553,7 +551,7 @@ select::-ms-expand {
 .b-effects__item b {
   display: block;
   color: #9aff64;
-  font-size: 18px;
+  font-size: 22px;
   margin: 0 0 3px;
 }
 
@@ -568,6 +566,7 @@ select::-ms-expand {
   background-repeat: no-repeat;
   background-position: 50% 0;
   color: #fff;
+  direction: rtl;
 }
 
 .b-reasons__inner {
@@ -621,8 +620,6 @@ select::-ms-expand {
 
 .b-reasons__left {
   padding-right: 50px;
-  /*удалить при вставке перевода*/
-  direction: rtl;
 }
 
 .b-reasons__right {
@@ -633,8 +630,6 @@ select::-ms-expand {
   font-size: 18px;
   font-weight: 800;
   margin: 0;
-  /*удалить при вставке перевода*/
-  direction: ltr;
 }
 
 .b-reasons__img {
@@ -712,6 +707,10 @@ select::-ms-expand {
   margin-bottom: 15px;
 }
 
+.b-reasons__slider {
+  direction: ltr;
+}
+
 .b-try {
   background-image: url(../img/try-bg.jpg);
   background-repeat: no-repeat;
@@ -720,10 +719,10 @@ select::-ms-expand {
   background-size: cover;
   color: #fff;
   padding: 60px 0 90px;
+  direction: rtl;
 }
 
 .b-try__wrapper {
-  direction: rtl;
   position: relative;
   z-index: 1;
 }
@@ -735,8 +734,6 @@ select::-ms-expand {
 .b-try__left {
   padding-right: 25px;
   text-align: right;
-  /**/
-  direction: ltr;
 }
 
 .b-try__right {
@@ -759,6 +756,7 @@ select::-ms-expand {
 .b-try__btn {
   display: inline-block;
   margin: 40px 0 0;
+  font-size: 20px;
 }
 
 .b-try__product {
@@ -837,6 +835,7 @@ select::-ms-expand {
   background-position: 50% 50%;
   text-align: right;
   padding: 45px 0 115px;
+  direction: rtl;
 }
 
 .b-quiz__test {
@@ -921,6 +920,7 @@ select::-ms-expand {
   border-right: 10px solid #127603;
   position: relative;
   opacity: .99;
+  direction: ltr;
 }
 
 .b-test__wrapper::after, .b-test__wrapper::before {
@@ -944,10 +944,12 @@ select::-ms-expand {
 }
 
 .b-test__title {
-  font-size: 18px;
+  font-size: 19px;
   color: #4a973b;
   padding-left: 30px;
   margin: 0 0 10px;
+  width: 220px;
+  text-align: right;
 }
 
 .b-test__title strong {
@@ -961,6 +963,7 @@ select::-ms-expand {
 }
 
 .b-test__item {
+  vertical-align: middle;
   text-align: center;
   padding: 15px;
 }
@@ -980,15 +983,13 @@ select::-ms-expand {
 }
 
 .b-test__question {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 700;
   margin: 0 0 15px;
-  /**/
-  direction: ltr;
 }
 
 .b-test__answer {
-  font-size: 16px;
+  font-size: 18px;
   display: inline-block;
   margin: 0 20px;
   line-height: 40px;
@@ -1072,6 +1073,7 @@ select::-ms-expand {
   height: 100%;
   z-index: 11;
   overflow: auto;
+  direction: rtl;
 }
 
 .b-popup__wrapper {
@@ -1082,6 +1084,8 @@ select::-ms-expand {
   -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
   margin: 20px;
+  width: 100%;
+  max-width: 700px;
 }
 
 .b-popup__inner {
@@ -1165,6 +1169,7 @@ select::-ms-expand {
   z-index: 1;
   padding: 60px 0;
   overflow: hidden;
+  direction: rtl;
 }
 
 .b-composition__title {
@@ -1175,10 +1180,6 @@ select::-ms-expand {
   color: #2a8916;
   text-transform: uppercase;
   text-align: center;
-}
-
-.b-composition__wrapper {
-  direction: rtl;
 }
 
 .b-composition__left, .b-composition__right {
@@ -1317,6 +1318,7 @@ select::-ms-expand {
   padding: 60px 65px 65px 345px;
   position: relative;
   z-index: 1;
+  direction: rtl;
 }
 
 .b-clinically__stamps {
@@ -1327,7 +1329,7 @@ select::-ms-expand {
 }
 
 .b-clinically__text {
-  font-size: 22px;
+  font-size: 38px;
   font-weight: 300;
   margin: 0;
   text-align: right;
@@ -1356,7 +1358,7 @@ select::-ms-expand {
   width: 400px;
   color: #fff;
   font-weight: 400;
-  font-size: 27px;
+  font-size: 40px;
   line-height: 1;
   margin: 0;
   text-align: center;
@@ -1861,7 +1863,7 @@ select::-ms-expand {
     display: none;
   }
   .b-header__level1 {
-    font-size: 15px;
+    font-size: 17px;
     padding-right: 100px;
     margin: 0;
   }
@@ -1957,7 +1959,7 @@ select::-ms-expand {
     padding-top: 40px;
   }
   .b-reasons__text {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
   }
   .b-reasons__bacterium1, .b-reasons__bacterium2, .b-reasons__bacterium3 {
@@ -2056,14 +2058,14 @@ select::-ms-expand {
     margin-top: -50px;
   }
   .b-try__title {
-    font-size: 26px;
+    font-size: 28px;
     margin: 40px 0 25px;
   }
   .b-try__title br {
     display: none;
   }
   .b-try__text {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
   }
   .b-try__btn {
@@ -2125,6 +2127,7 @@ select::-ms-expand {
   }
   .b-test__title {
     padding-left: 0;
+    width: auto;
   }
   .b-test__wrapper {
     border: none;
@@ -2293,7 +2296,7 @@ select::-ms-expand {
   }
   .b-composition__text {
     padding: 0 30px 0 0;
-    font-size: 13px;
+    font-size: 14px;
     text-align: right;
   }
   .b-composition__img--3 img {
@@ -2339,6 +2342,9 @@ select::-ms-expand {
     display: block;
     margin: 0 auto 15px;
   }
+  .b-clinically__text {
+    font-size: 25px;
+  }
   .b-order {
     padding: 35px 0 95px;
     background-image: url(../img/hero-bg-mobile.jpg);
@@ -2363,7 +2369,7 @@ select::-ms-expand {
   }
   .b-order__title {
     width: auto;
-    font-size: 18px;
+    font-size: 25px;
   }
   .b-order__title strong {
     font-size: 33px;
@@ -2392,7 +2398,7 @@ select::-ms-expand {
     padding: 22px 35px 22px 45px;
   }
   .b-order__bubble {
-    font-size: 13px;
+    font-size: 18px;
     padding: 18px 40px 18px 15px;
     max-width: 200px;
     top: -10px;

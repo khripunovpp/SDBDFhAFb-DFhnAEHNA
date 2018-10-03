@@ -5,6 +5,7 @@
 	background-position: 50% 50%
 	text-align: right
 	padding: 45px 0 115px
+	direction: rtl
 	&__test
 		width: 696px
 		display: inline-block
@@ -69,6 +70,7 @@
 		border-right: 10px solid $color
 		position: relative
 		opacity: .99
+		direction: ltr
 		&::after,
 		&::before
 			content: ''
@@ -85,19 +87,23 @@
 			height: 40px
 			top: -40px
 	&__title
-		font-size: 18px
+		font-size: 19px
 		color: #4a973b
 		padding-left: 30px
 		margin: 0 0 10px
+		width: 220px
+		text-align: right
 		strong
 			font-weight: 900
 			text-transform: uppercase
 			display: block
 	&__row
-		direction: rtl
 		@extend %grid
+
+		direction: rtl
 	&__item
 		@extend %part
+		vertical-align: middle
 		text-align: center
 		padding: 15px
 		&--gradientToBottom
@@ -105,13 +111,11 @@
 		&--gradientToTop
 			background-image: linear-gradient(to top, transparent, #f1ebeb)
 	&__question
-		font-size: 14px
+		font-size: 17px
 		font-weight: 700
 		margin: 0 0 15px
-		/**/
-		direction: ltr
 	&__answer
-		font-size: 16px
+		font-size: 18px
 		display: inline-block
 		margin: 0 20px
 		line-height: 40px
@@ -182,12 +186,15 @@
 	height: 100%
 	z-index: 11
 	overflow: auto
+	direction: rtl
 	&__wrapper
 		position: absolute
 		top: 0
 		left: 50%
 		transform: translate(-50%,0)
 		margin: 20px
+		width: 100%
+		max-width: 700px
 	&__inner
 		background-image: url(../img/popup-bg.png)
 		background-size: 100% 100%
