@@ -427,5 +427,87 @@
 			&::before
 				font-size: 25px
 
+	.b-composition
+		background-color: #f2feeb
+		background-image: linear-gradient(to bottom,#f2feeb, #c2f89e)
+		padding: 35px 0
+		&__title
+			font-size: 30px
+			line-height: 1.3
+		&__wrapper
+			display: block
+			direction: ltr
+		&__left,
+		&__right
+			display: block
+		&__product
+			background-size: 200px
+			img
+				height: 300px
+		&__waves
+			width: 230px
+			height: 230px
+			margin-top: -115px
+			margin-left: -115px
+			&::before
+				width: 260px
+				height: 260px
+				margin-top: -130px
+				margin-left: -130px
+			&::after
+				width: 290px
+				height: 290px
+				margin-top: -145px
+				margin-left: -145px
+		&__item
+			display: block
+			direction: rtl
+			padding: 15px 27px 15px 15px
+			overflow: hidden
+			&+&
+				margin-top: 0
+		&__text
+			padding: 0 30px 0 0
+			font-size: 13px
+			text-align: right
+		&__img
+			&--3
+				img
+					width: 100px
+		.bx
+			&-wrapper
+			&-controls
+				direction: rtl
+				text-align: center
+			&-pager
+				&-item
+					display: inline-block
+					margin: 0 10px
+				&-link
+					display: block
+					width: 12px
+					height: 12px
+					font-size: 0
+					border-radius: 50%
+					background-color: #fff
+					&:hover,
+					&.active
+							background-color: #57c134
 
-
+	.b-clinically
+		width: auto
+		margin: 0
+		background-image: none
+		background-color: #fedf48
+		border-bottom: 13px solid #127603
+		padding: 35px 0
+		&__inner
+			max-width: 320px
+			padding: 0 35px
+			margin: 0 auto
+		&__stamps
+			position: relative
+			top: auto
+			left: auto
+			display: block
+			margin: 0 auto 15px

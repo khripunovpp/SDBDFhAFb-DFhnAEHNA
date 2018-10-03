@@ -4,6 +4,7 @@
 	position: relative
 	z-index: 1
 	padding: 60px 0
+	overflow: hidden
 	&__title
 		position: relative
 		z-index: 1
@@ -68,4 +69,58 @@
 			border: 2px solid #f7fef1
 			animation: pulse 1.5s linear .8s infinite
 			opacity: 0
+	&__item
+		@extend %grid
+		&+&
+			margin-top: 30px
+	&__pic,
+	&__text
+		@extend %part
+		vertical-align: middle
+	&__pic
+		width: 80px
+	&__img
+		width: 80px
+		height: 100px
+		border: 6px solid #57c134
+		position: relative
+		img
+			position: absolute
+			max-width: none
+		&--1
+			img
+				bottom: -15px
+				left: -17px
+		&--2
+			img
+				bottom: 0
+				left: -30px
+		&--3
+			img
+				bottom: 0
+				left: 0
+	&__text
+		padding-right: 35px
+		padding-left: 70px
+		font-size: 16px
+		font-weight: 700
 
+.b-clinically
+	margin: -95px auto 90px
+	width: 833px
+	background-image: url(../img/clinically-bg.png)
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	padding: 60px 65px 65px 345px
+	position: relative
+	z-index: 1
+	&__stamps
+		position: absolute
+		top: 50%
+		left: 45px
+		margin-top: -60px
+	&__text
+		font-size: 22px
+		font-weight: 300
+		margin: 0
+		text-align: right

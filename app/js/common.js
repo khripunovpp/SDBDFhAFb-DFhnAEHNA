@@ -255,4 +255,19 @@ $(function() {
 
     qiuz()
 
+    var compositionSlider = _bxInnit('.b-composition__list', {
+        view: 'mobile',
+        adaptiveHeight: true,
+        swipeThreshold: 40,
+        controls: false,
+        pager: true,
+        auto: true,
+        pause: 10000,
+        autoHover: true,
+        infiniteLoop: true,
+        slideMargin: 3,
+        direction: 'rtl'
+    });
+
+
 });

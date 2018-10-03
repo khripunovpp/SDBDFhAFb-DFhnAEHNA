@@ -60,13 +60,13 @@ html
 								.b-hero__right
 									.b-hero__effects
 										ul.b-effects
-											li.b-effects__item
+											li.b-effects__item.js-scroll-detection
 												p #[b Устраняет] зуд и неприятный запах
-											li.b-effects__item
+											li.b-effects__item.js-scroll-detection
 												p #[b Борется] с грибком кожи и ногтей
-											li.b-effects__item
+											li.b-effects__item.js-scroll-detection
 												p #[b Устраняет] потливость ног
-											li.b-effects__item
+											li.b-effects__item.js-scroll-detection
 												p #[b Предотвращает] повторное появление запаха
 				.b-hero__footer.js-parallax-container
 					.container
@@ -182,17 +182,24 @@ html
 						.b-composition__left
 							ul.b-composition__list
 								li.b-composition__item
-									.b-composition__img
-										img(src="img/composition-img-1.png", alt="")
+									.b-composition__pic
+										.b-composition__img.b-composition__img--1
+											img(src="img/composition-img-1.png", alt="")
 									p.b-composition__text Антигрибковый комплекс последнего поколения борется со всеми известными видами грибка
 								li.b-composition__item
-									.b-composition__img
-										img(src="img/composition-img-2.png", alt="")
+									.b-composition__pic
+										.b-composition__img.b-composition__img--2
+											img(src="img/composition-img-2.png", alt="")
 									p.b-composition__text Комплекс эфирных масел успокаивает кожу и устраняет повышенную потливость
 								li.b-composition__item
-									.b-composition__img
-										img(src="img/composition-img-3.png", alt="")
+									.b-composition__pic
+										.b-composition__img.b-composition__img--3
+											img(src="img/composition-img-3.png", alt="")
 									p.b-composition__text Восстанавливающий комплекс устранит зуд и нериятные ощущения после первого применения
+		.b-clinically
+			.b-clinically__inner
+				img.b-clinically__stamps(src="img/clinically-stamps.png", alt="")
+				p.b-clinically__text Спрей протестирован клинически, не имеет противопоказаний и ограничений
 		.b-overlay
 		.b-popup 
 			.b-popup__wrapper
